@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chinook Seedery - Lemon Pepper 320x50</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+  }
+  .banner {
+    position: relative;
+    width: 320px;
+    height: 50px;
+  }
+  .banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 50px;
+    opacity: 0;
+    animation: crossfade 10s infinite;
+  }
+  .banner img:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .banner img:nth-child(2) {
+    animation-delay: 5s;
+  }
+  @keyframes crossfade {
+    0%     { opacity: 1; }
+    49.9%  { opacity: 1; }
+    50%    { opacity: 0; }
+    99.9%  { opacity: 0; }
+    100%   { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <img src="frame1.png" alt="Shop Bobby Witt Jr.'s Lemon Pepper Seeds">
+    <img src="frame2.png" alt="Chinook Seedery Official Sunflower Seed of USA Baseball">
+  </div>
+</body>
+</html>
